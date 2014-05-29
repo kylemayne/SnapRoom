@@ -192,7 +192,7 @@ p a:hover {
 	height:100%;
 	min-height: 650px;
 	color:#FFF;
-	background:url("http://kylemayne.com/snaproom/img/bg.jpg") #363f48 no-repeat center center fixed; 
+	background:url("") #363f48 no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
