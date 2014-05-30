@@ -44,35 +44,35 @@ $('.button').click(function(e){
 	
 
 	/* Form Submission */
-//	$('form').submit(function() {
-//		
-//		var form_data = $(this).serialize();
-//
-//		if (validateEmail($('input[name=email]').attr('value')))
-//		{
-//			
-//			if (typeof ajax_form !== "undefined" && ajax_form === true)
-//			{
-//				
-//				$.post($(this).attr('action'), form_data, function(data) {
-//					$('form').show('slow', function() { $(this).after('<div class="clear"></div> <p class="msg-ok">'+ data + '</p>'); });
-//	  				$('.spam').hide();
-//	  				$('.msg-ok').delay(300).effect("pulsate", { times:1 }, 1000);
-//				});
-//				
-//				return false;
-//				
-//			}
-//			
-//		}
-//
-//		else
-//		{
-//			$('p.spam').text('Please enter a valid e-mail').effect("pulsate", { times:3 }, 1000);
-//			return false;
-//		}
-//		
-//	});
+	$('form').submit(function() {
+		
+		var form_data = $(this).serialize();
+
+		if (validateEmail($('input[name=email]').attr('value')))
+		{
+			
+			if (typeof ajax_form !== "undefined" && ajax_form === true)
+			{
+				
+				$.post($(this).attr('action'), form_data, function(data) {
+					$('form').show('slow', function() { $(this).after('<div class="clear"></div> <p class="msg-ok">'+ data + '</p>'); });
+	  				$('.spam').hide();
+	  				$('.msg-ok').delay(300).effect("pulsate", { times:1 }, 1000);
+				});
+				
+				return false;
+				
+			}
+			
+		}
+
+		else
+		{
+			$('p.spam').text('Please enter a valid e-mail').effect("pulsate", { times:3 }, 1000);
+			return false;
+		}
+		
+	});
 
 
 /* Validate E-Mail */
